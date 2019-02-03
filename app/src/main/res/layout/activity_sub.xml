@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fee"
+        tools:context=".SubActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="89dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/imageViewE"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000000" />
+            <SeekBar
+                android:id="@+id/SeekBar2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:max="360"
+                android:progress="180"
+                android:visibility="invisible"
+                android:rotation="270"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|bottom"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonD"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="#a0a0a0"
+                    android:text="OK"
+                    android:visibility="invisible" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/button_menu1"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:background="#a0a0a0"
+                        android:text="Reverse"
+                        android:visibility="invisible"/>
+                    <SeekBar
+                        android:id="@+id/SeekBar_menu2"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:max="20"
+                        android:progress="0"
+                        android:layout_marginLeft="20dp"
+                        android:visibility="invisible"/>
+                    <Button
+                        android:id="@+id/button_menu2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#a0a0a0"
+                        android:text="Blend"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+                <SeekBar
+                    android:id="@+id/SeekBar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:max="360"
+                    android:progress="180"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </FrameLayout>
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/button0"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#face55"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/tiling"
+                    android:onClick="tiling"/>
+
+                <ImageButton
+                    android:id="@+id/button1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#face55"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/light"
+                    android:onClick="gamma" />
+                <ImageButton
+                    android:id="@+id/button2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#face55"
+                    android:onClick="rotate"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/rotate" />
+                <ImageButton
+                    android:id="@+id/button3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#face55"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/trim"
+                    android:onClick="trim_area" />
+                <ImageButton
+                    android:id="@+id/button4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#face55"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mirrorx"
+                    android:onClick="mirror_x" />
+                <ImageButton
+                    android:id="@+id/button5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#face55"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mirrory"
+                    android:onClick="mirror_y"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        -->
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
